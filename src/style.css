@@ -1,0 +1,149 @@
+body {
+    width: 1510px;
+}
+
+.about {
+    width: 1170px;
+    height: 665px;
+    margin-left: 171px;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.about_h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+}
+
+.separator {
+    width: 170px;
+    height: 0px;
+    border: 1px solid #EC7979;
+    margin: auto;
+}
+
+.about_h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 71px;
+    margin-top: 40px;
+}
+
+.group_1, .group_2 {
+    width: 370px;
+    height: 383px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.group_3 {
+    width: 370px;
+    height: 383px;
+    display: inline-block;
+}
+
+.about_icon_1 {
+    Display:flex;
+    Align-items:center;
+    Justify-content:center;
+}
+
+.group_1_h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.group_1_h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    width: 1170px;
+    height: 540px;
+    margin: auto;
+}
+
+.rectangle {
+    width: 1170px;
+    height: 501px;
+    border-bottom: 1px solid #C6CBCD;
+    border-left: 1px solid #C6CBCD;
+    border-right: 1px solid #C6CBCD;
+}
+.tabs_h5{
+    width: 570px;
+    height: 124px;
+    margin-left: 100px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.tabs_h3 {
+    width: 570px;
+    height: 210px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 100px;
+    display: flex; 
+    align-items: center;
+}
+
+.tabpic {
+    float: right;
+    width: 470px;
+    height: 500px;
+}
+
+.download {
+    width: 270px;
+    height: 58px;
+    background-color: #EC7979;
+    margin-top: 27px;
+    margin-left: 100px;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.tab_1 {
+    width: 203px;
+    height: 40px;
+    border: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: transparent;
+}
+
+.tab_1, .tab_2, .tab_3, .tab_4 {
+    display: inline-block;
+}
