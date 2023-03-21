@@ -146,4 +146,11 @@ body {
 
 .tab_1, .tab_2, .tab_3, .tab_4 {
     display: inline-block;
+    margin: 0px;
+}
+
+.tab_2, .tab_3 {
+    width: 184px;
+    height: 40px;
+    border-bottom: 1px solid #C6CBCD;
 }
