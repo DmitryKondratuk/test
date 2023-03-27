@@ -2,12 +2,15 @@ body {
     width: 1510px;
 }
 
-.about {
+/*блок about*/
+
+.about_container {
     width: 1170px;
     height: 665px;
     margin-left: 171px;
     margin-top: 50px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .about_h2 {
@@ -15,7 +18,12 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    text-align: center;
+    width: 1170px;
+    height: 150px;
+    Display:flex;
+    Align-items:center;
+    Justify-content:center;
+    margin: 0, auto;
 }
 
 .separator {
@@ -30,29 +38,32 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    text-align: center;
     color: #86878B;
-    margin-bottom: 71px;
+    Display:flex;
+    Align-items:center;
+    Justify-content:center;
     margin-top: 40px;
 }
 
-.group_1, .group_2 {
-    width: 370px;
-    height: 383px;
-    display: inline-block;
-    margin-right: 25px;
+.about_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 71px;
 }
 
-.group_3 {
+.group_1, .group_2, .group_3 {
     width: 370px;
     height: 383px;
-    display: inline-block;
 }
 
 .about_icon_1 {
     Display:flex;
     Align-items:center;
     Justify-content:center;
+    width: 170px;
+    height: 170px;
+    margin: auto;
 }
 
 .group_1_h4{
@@ -60,7 +71,6 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
     text-align: center;
 }
 
@@ -71,15 +81,16 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
 }
 
-.tabs {
+ /*блок с tab*/
+
+ .tabs {                   
     width: 1170px;
     height: 540px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .rectangle {
@@ -88,7 +99,12 @@ body {
     border-bottom: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .tabs_h5{
     width: 570px;
     height: 124px;
@@ -99,7 +115,8 @@ body {
     font-size: 30px;
     display: flex; 
     align-items: center;
-    margin-bottom: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .tabs_h3 {
@@ -112,19 +129,20 @@ body {
     margin-left: 100px;
     display: flex; 
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .tabpic {
-    float: right;
     width: 470px;
     height: 500px;
+    margin-left: auto;
 }
 
 .download {
     width: 270px;
     height: 58px;
     background-color: #EC7979;
-    margin-top: 27px;
     margin-left: 100px;
     color: white;
     font-family: 'Open Sans';
@@ -134,6 +152,11 @@ body {
     display: flex; 
     align-items: center;
     justify-content: center;
+    margin-bottom: 54px;
+}
+
+.big_tab {
+    display: flex;
 }
 
 .tab_1 {
@@ -142,11 +165,15 @@ body {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
     border-bottom: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .tab_1, .tab_2, .tab_3, .tab_4 {
-    display: inline-block;
-    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tab_2, .tab_3 {
@@ -159,4 +186,92 @@ body {
     width: 600px;
     height: 40px;
     border-bottom: 1px solid #C6CBCD;
+}
+
+/*блок pricing*/
+
+.pricing {
+    width: 1508px;
+    height: 900px;
+    background-color: #F5F5F5;
+}
+
+.pricing_box {
+    width: 1170px;
+    height: 800px;
+    margin: auto;
+}
+
+.pricing_container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 530px;
+}
+
+.basic {
+    width: 366px;
+    height: 56px;
+    background-color: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.price {
+    width: 366px;
+    height: 96px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.free {
+    width: 366px;
+    height: 46px;
+    background: #333333;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.space {
+    width: 366px;
+    height: 46px;
+    color: #86878B;
+    background-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic_box_1 {
+    align-self: flex-end;
+}
+
+.basic_box_2 {
+    align-self: flex-start;
 }
