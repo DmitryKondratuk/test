@@ -1,6 +1,230 @@
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+
 body {
     width: 1510px;
 }
+
+/*блок header*/
+.main_header {
+    width: 1510px;
+    height: 1026px;
+    background: url(/src/img/image.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* position: relative;
+    min-height: 100vh; */
+}
+
+/* .main_header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+} */
+
+.banner_header {
+    width: 1510px;
+    height: 76px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.logo_header {
+    margin-left: 115px;
+    width: 183px;
+}
+
+.menu_header {
+    width: 570px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin-left: 470px;
+}
+
+.menu_header div {
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    width: 115px;
+}
+
+.logo {
+    width: 270px;
+    height: 100px;
+    margin-left: 170px;
+    margin-top: 283px;
+    margin-bottom: 50px;
+    padding-top: 23px;
+}
+
+.header_text {
+    width: 670px;
+    height: 168px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+    margin-left: 170px;
+    margin-bottom: 55px;
+}
+
+.header_separator {
+    width: 170px;
+    height: 0px;
+    border: 1px solid white;
+    margin-left: 170px;
+    margin-bottom: 42px;
+}
+.header_content {
+    width: 270px;
+    height: 42px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-left: 170px;
+    margin-bottom: 42px;
+}
+
+.header_download {
+    width: 270px;
+    height: 58px;
+    margin-left: 170px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrance {
+    height: 450px;
+    width: 470px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 283px;
+    margin-left: 30px;
+}
+
+.entrance_logo {
+    width: 367px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 45px;
+}
+
+input {
+    border: none;
+}
+
+.entrance_name {
+    width: 370px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+    margin: auto;
+    margin-bottom: 33px;
+}
+
+.entrance_email {
+    width: 370px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+    margin: auto;
+    margin-bottom: 33px;
+}
+
+.entrance_password {
+    width: 370px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.entrance_button {
+    width: 470px;
+    height: 60px;
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* блок social media */
+
+.social {
+    max-width: 1510px;
+    height: 140px;
+    background: #F8EFEF;
+    margin-bottom: 99px;
+    padding-left: 170px;
+    display: flex;
+}
+
+.social_content_1 {
+    width: 470px;
+    height: 60px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.social_content_2 {
+    width: 470px;
+    height: 42px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+}
+
+.social_icons div {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
 
 /*блок about*/
 
@@ -194,6 +418,7 @@ body {
     width: 1508px;
     height: 900px;
     background-color: #F5F5F5;
+    margin-bottom: 50px;
 }
 
 .pricing_box {
@@ -275,3 +500,232 @@ body {
 .basic_box_2 {
     align-self: flex-start;
 }
+
+
+
+/* блок customers */
+
+.customers {
+    width: 1171px;
+    height: 630px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.customers_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer_1 {
+    width: 370px;
+    height: 336px;
+}
+
+.customer_1_text {
+    width: 370px;
+    height: 180px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+}
+
+.polygon {
+    width: 30px;
+    height: 20px;
+    margin-left: 70px;
+    margin-bottom: 46px;
+}
+
+.customer_icon {
+    display: flex;
+    gap: 30px;
+}
+
+.icon_text_1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    width: 269px;
+    height: 54px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon_text_2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    width: 270px;
+    height: 21px;
+}
+
+
+
+/* блок stylish */
+
+
+.stylish {
+    width: 1510px;
+    height: 442px;
+    background: url(/src/img/stylish\ image.jpg);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.stylish_head {
+    width: 1170px;
+    height: 150px;
+    margin: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylish_separator {
+    width: 170px;
+    height: 0px;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.stylish_text {
+    width: 1169px;
+    height: 21px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 73px;
+    text-align: center;
+}
+
+.stylish_button {
+    width: 370px;
+    height: 58px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+}
+
+
+
+/* блок contact us */
+
+
+.contact {
+    width: 1170px;
+    height: 622px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.contact_content {
+    display: flex;
+    margin-top: 89px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact_name {
+    width: 571px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 50px;
+}
+
+.contact_email {
+    width: 571px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 50px;
+}
+
+.contact_password {
+    width: 571px;
+    height: 38px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contact_message {
+    width: 571px;
+    height: 215px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.contact_button {
+    width: 370px;
+    height: 58px;
+    background: #EC7979;
+    color: white;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* блок footer */
+
+
+.footer {
+    width: 1510px;
+    height: 164px;
+    background-color: black;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_icons {
+    width: 570px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text {
+    width: 1169px;
+    height: 21px;
+    margin: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
