@@ -2,17 +2,16 @@
 @import url('https://fonts.cdnfonts.com/css/open-sans');
 
 body {
-    width: 1510px;
+    max-width: 1510px;
 }
 
 /*блок header*/
 .main_header {
-    width: 1510px;
-    height: 1026px;
-    background: url(/src/img/image.jpg);
+    max-width: 1510px;
+    max-height: 1026px;
+    background: url(./img/header_wrapper.jpg);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     /* position: relative;
     min-height: 100vh; */
 }
@@ -59,13 +58,24 @@ body {
     width: 115px;
 }
 
+.header_box {
+    padding-left: 170px;
+    padding-top: 208px;
+    padding-bottom: 185px;
+    display: flex;
+    gap: 30px;
+}
+
+.header_box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 633px;
+}
+
 .logo {
     width: 270px;
     height: 100px;
-    margin-left: 170px;
-    margin-top: 283px;
-    margin-bottom: 50px;
-    padding-top: 23px;
 }
 
 .header_text {
@@ -76,17 +86,14 @@ body {
     font-weight: 500;
     font-size: 48px;
     color: white;
-    margin-left: 170px;
-    margin-bottom: 55px;
 }
 
 .header_separator {
     width: 170px;
     height: 0px;
     border: 1px solid white;
-    margin-left: 170px;
-    margin-bottom: 42px;
 }
+
 .header_content {
     width: 270px;
     height: 42px;
@@ -95,14 +102,11 @@ body {
     font-weight: 400;
     font-size: 18px;
     color: white;
-    margin-left: 170px;
-    margin-bottom: 42px;
 }
 
 .header_download {
     width: 270px;
     height: 58px;
-    margin-left: 170px;
     border: 2px solid white;
     color: white;
     font-family: 'Open Sans';
@@ -120,8 +124,6 @@ body {
     border-radius: 10px;
     background-color: white;
     border: 1px solid white;
-    margin-top: 283px;
-    margin-left: 30px;
 }
 
 .entrance_logo {
@@ -229,9 +231,9 @@ input {
 /*блок about*/
 
 .about_container {
-    width: 1170px;
-    height: 665px;
-    margin-left: 171px;
+    max-width: 1170px;
+    max-height: 665px;
+    margin: auto;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -242,8 +244,8 @@ input {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    width: 1170px;
-    height: 150px;
+    max-width: 1170px;
+    max-height: 150px;
     Display:flex;
     Align-items:center;
     Justify-content:center;
@@ -255,9 +257,11 @@ input {
     height: 0px;
     border: 1px solid #EC7979;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 .about_h5 {
+    max-height: 21px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -266,14 +270,12 @@ input {
     Display:flex;
     Align-items:center;
     Justify-content:center;
-    margin-top: 40px;
+    /* margin-bottom: 71px; */
 }
 
 .about_box {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 71px;
 }
 
 .group_1, .group_2, .group_3 {
@@ -310,37 +312,40 @@ input {
  /*блок с tab*/
 
  .tabs {                   
-    width: 1170px;
-    height: 540px;
+    max-width: 1170px;
+    max-height: 540px;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 .rectangle {
-    width: 1170px;
-    height: 501px;
+    max-width: 1170px;
+    max-height: 501px;
     border-bottom: 1px solid #C6CBCD;
     border-left: 1px solid #C6CBCD;
     border-right: 1px solid #C6CBCD;
     display: flex;
+    gap: 30px;
+}
+
+.tab_box1 {
+    padding-left: 100px;
+    padding-bottom: 54px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .tabs_h5{
     width: 570px;
     height: 124px;
-    margin-left: 100px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    display: flex; 
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    /* display: flex; 
+    align-items: center; */
 }
 
 .tabs_h3 {
@@ -350,24 +355,19 @@ input {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    margin-left: 100px;
-    display: flex; 
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    /* display: flex; 
+    align-items: center; */
 }
 
 .tabpic {
     width: 470px;
     height: 500px;
-    margin-left: auto;
 }
 
 .download {
     width: 270px;
     height: 58px;
     background-color: #EC7979;
-    margin-left: 100px;
     color: white;
     font-family: 'Open Sans';
     font-style: normal;
@@ -376,7 +376,6 @@ input {
     display: flex; 
     align-items: center;
     justify-content: center;
-    margin-bottom: 54px;
 }
 
 .big_tab {
@@ -415,15 +414,16 @@ input {
 /*блок pricing*/
 
 .pricing {
-    width: 1508px;
-    height: 900px;
+    max-width: 1508px;
+    max-height: 900px;
     background-color: #F5F5F5;
     margin-bottom: 50px;
+    padding: 50px;
 }
 
 .pricing_box {
-    width: 1170px;
-    height: 800px;
+    max-width: 1170px;
+    max-height: 800px;
     margin: auto;
 }
 
@@ -506,10 +506,11 @@ input {
 /* блок customers */
 
 .customers {
-    width: 1171px;
-    height: 630px;
+    max-width: 1171px;
+    max-height: 630px;
     margin: auto;
     margin-bottom: 64px;
+    padding-top: 50px;
 }
 
 .customers_content {
@@ -577,9 +578,9 @@ input {
 
 
 .stylish {
-    width: 1510px;
-    height: 442px;
-    background: url(/src/img/stylish\ image.jpg);
+    max-width: 1510px;
+    max-height: 442px;
+    background: url(./img/stylish_wrapper.jpg);
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -638,10 +639,11 @@ input {
 
 
 .contact {
-    width: 1170px;
-    height: 622px;
+    max-width: 1170px;
+    max-height: 622px;
     margin: auto;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .contact_content {
